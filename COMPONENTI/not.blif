@@ -1,0 +1,10 @@
+.model not
+
+.inputs BIT_DA_NEGARE
+.outputs NEGATO
+
+.names BIT_DA_NEGARE NEGATO
+1 0
+.end
+
+# Dato un BIT_DA_NEGARE ne ottieniamo il suo NEGATO

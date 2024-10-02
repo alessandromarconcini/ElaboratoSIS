@@ -1,0 +1,12 @@
+.model or
+
+.inputs IN1 IN0
+.outputs OR
+
+.names IN1 IN0 OR
+
+10 1
+01 1
+11 1
+
+.end

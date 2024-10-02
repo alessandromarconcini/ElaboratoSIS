@@ -1,0 +1,16 @@
+.model uguale01
+
+.inputs IN OUT
+
+# Questo componente fornisce l'ENTRATA all'fsm
+# INPUT DAL DATAPATH : SEQ4 SEQ3 --->IN/OUT
+
+.outputs ENTRATA
+
+.names IN OUT ENTRATA
+
+01 1 
+
+.end
+
+

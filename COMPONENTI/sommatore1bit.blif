@@ -1,0 +1,23 @@
+.model sommatore1bit
+
+.inputs IN1 IN0 CIN
+.outputs OSOMMA COUT
+
+# i .names sono due poichè ho due output 
+# le tabelle di verità dichiarano nella prima i risultati di uno e nella seconda i riporti
+
+.names IN1 IN0 CIN OSOMMA
+
+001 1
+100 1
+010 1
+111 1
+
+.names IN1 IN0 CIN COUT
+
+011 1
+110 1
+101 1
+111 1
+
+.end

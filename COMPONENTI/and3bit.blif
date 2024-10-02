@@ -1,0 +1,10 @@
+.model and3bit
+
+.inputs IN2 IN1 IN0
+
+.outputs AND
+
+.names IN2 IN1 IN0 AND 
+
+111 1 
+.end

@@ -1,0 +1,12 @@
+.model mux2bit
+
+.inputs SELEZIONE IN3 IN2 IN1 IN0
+.outputs OMUX1 OMUX0
+
+.subckt mux1bit SELEZIONE=SELEZIONE IN1=IN3 IN0=IN1 OMUX=OMUX1 
+.subckt mux1bit SELEZIONE=SELEZIONE IN1=IN2 IN0=IN0 OMUX=OMUX0
+
+.end
+
+.search mux1bit.blif
+ 

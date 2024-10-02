@@ -1,0 +1,20 @@
+.model uguale11110
+
+.inputs SEQ4 SEQ3 SEQ2 SEQ1 SEQ0
+
+.subckt uguale1 IN=SEQ4 RISULTATO_SINGOLO_BIT=RIS4
+.subckt uguale1 IN=SEQ3 RISULTATO_SINGOLO_BIT=RIS3
+.subckt uguale1 IN=SEQ2 RISULTATO_SINGOLO_BIT=RIS2
+.subckt uguale1 IN=SEQ1 RISULTATO_SINGOLO_BIT=RIS1
+.subckt uguale0 IN=SEQ0 RISULTATO_SINGOLO_BIT=RIS0
+
+.outputs RISULTATO11110
+
+.names RIS4 RIS3 RIS2 RIS1 RIS0 RISULTATO11110
+
+11111 1
+
+.end
+
+.search uguale1.blif
+.search uguale0.blif 

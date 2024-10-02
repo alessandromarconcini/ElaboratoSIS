@@ -1,0 +1,46 @@
+.model FSM_min
+.inputs IN_0 IN_1 IN_2
+.outputs CARICAMENTO SBARRA_IN SBARRA_OUT FSMA FSMB FSMC
+.latch    [326] LatchOut_v3   0
+.latch    [327] LatchOut_v4   0
+.start_kiss
+.i 3
+.o 6
+.p 9
+.s 4
+.r S1
+0-- S0 S1 000000
+100 S0 S0 000000
+101 S0 S0 010000
+110 S0 S0 001000
+111 S0 S0 000000
+0-- S1 S1 000000
+1-- S1 S2 100100
+--- S2 S3 100010
+--- S3 S0 100001
+.end_kiss
+.latch_order LatchOut_v3 LatchOut_v4
+.code S0 10
+.code S1 00
+.code S2 11
+.code S3 01
+.names IN_0 FSMB FSMC [326]
+--1 1
+10- 1
+.names FSMA FSMB [327]
+1- 1
+-1 1
+.names LatchOut_v4 FSMA CARICAMENTO
+1- 1
+-1 1
+.names IN_1 IN_2 LatchOut_v3 [326] SBARRA_IN
+0111 1
+.names IN_1 IN_2 LatchOut_v3 [326] SBARRA_OUT
+1011 1
+.names IN_0 LatchOut_v3 LatchOut_v4 FSMA
+100 1
+.names LatchOut_v3 LatchOut_v4 FSMB
+11 1
+.names LatchOut_v3 LatchOut_v4 FSMC
+01 1
+.end

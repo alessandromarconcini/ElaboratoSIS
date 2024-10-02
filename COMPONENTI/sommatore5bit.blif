@@ -1,0 +1,18 @@
+.model sommatore5bit
+
+.inputs IN9 IN8 IN7 IN6 IN5 IN4 IN3 IN2 IN1 IN0
+.outputs OSOMMA4 OSOMMA3 OSOMMA2 OSOMMA1 OSOMMA0 COUT
+
+.subckt costante0 COSTANTE0=CIN
+
+.subckt sommatore1bit IN1=IN5 IN0=IN0 CIN=CIN COUT=C3 OSOMMA=OSOMMA0
+.subckt sommatore1bit IN1=IN6 IN0=IN1 CIN=C3 COUT=C2 OSOMMA=OSOMMA1
+.subckt sommatore1bit IN1=IN7 IN0=IN2 CIN=C2 COUT=C1 OSOMMA=OSOMMA2
+.subckt sommatore1bit IN1=IN8 IN0=IN3 CIN=C1 COUT=C0 OSOMMA=OSOMMA3
+.subckt sommatore1bit IN1=IN9 IN0=IN4 CIN=C0 COUT=COUT OSOMMA=OSOMMA4
+
+
+# Prende in input 5 e 5 bit e il CIN se c'è effettivamente (Riporto)
+
+.search sommatore1bit.blif
+.search costante0.blif

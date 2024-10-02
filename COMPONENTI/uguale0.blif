@@ -1,0 +1,17 @@
+.model uguale0
+
+.inputs IN
+
+.subckt costante0 COSTANTE0=CONFRONTO
+.outputs RISULTATO_SINGOLO_BIT
+
+.names IN CONFRONTO RISULTATO_SINGOLO_BIT
+
+00 1
+.end
+
+.search costante0.blif
+
+# IN -> Un bit da confrontare immesso
+# CONFRONTO -> Costante da confrontare (Singolo bit)
+# RISULTATO_SINGOLO_BIT -> Uscita dal confronto (Deve essere utilizzata con le altre se ci sono più bit da confrontare)

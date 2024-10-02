@@ -1,0 +1,12 @@
+.model uguale10
+
+.inputs IN OUT
+.outputs USCITA
+
+.names IN OUT USCITA
+
+10 1 
+
+.end
+
+

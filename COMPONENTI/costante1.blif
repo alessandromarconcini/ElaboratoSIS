@@ -1,0 +1,10 @@
+.model costante1
+
+.outputs COSTANTE1
+
+.names COSTANTE1
+1
+.end
+
+# Non ho input poichè è una costante
+# Fornisce un "1" (Singolo bit)

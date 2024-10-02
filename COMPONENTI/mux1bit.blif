@@ -1,0 +1,18 @@
+.model mux1bit
+
+.inputs SELEZIONE IN1 IN0
+
+# La SELEZIONE sceglie quale risultato produrre,ci sono due casi.
+
+.outputs OMUX
+
+.names SELEZIONE IN1 IN0 OMUX
+
+#importa solo l'1 di IN0
+101 1
+111 1
+#viceversa
+010 1
+011 1
+
+.end

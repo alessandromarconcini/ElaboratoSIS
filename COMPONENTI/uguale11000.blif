@@ -1,0 +1,23 @@
+.model uguale11000
+
+.inputs SEQ4 SEQ3 SEQ2 SEQ1 SEQ0
+
+.subckt uguale1 IN=SEQ4 RISULTATO_SINGOLO_BIT=RIS4
+.subckt uguale1 IN=SEQ3 RISULTATO_SINGOLO_BIT=RIS3
+.subckt uguale0 IN=SEQ2 RISULTATO_SINGOLO_BIT=RIS2
+.subckt uguale0 IN=SEQ1 RISULTATO_SINGOLO_BIT=RIS1
+.subckt uguale0 IN=SEQ0 RISULTATO_SINGOLO_BIT=RIS0
+
+.outputs RISULTATO11000
+
+.names RIS4 RIS3 RIS2 RIS1 RIS0 RISULTATO11000
+
+11111 1
+
+.end
+
+.search uguale1.blif
+.search uguale0.blif
+
+# Confronto i 5 bit della sequenza utilizzando i sottocomponenti(modelli) uguale1 e uguale0 
+# se ho 11000 ogni confronto singolo mi da un "1", se tutti sono giusti("11111"), allora tutto il numero è giusto ("1" in uscita)

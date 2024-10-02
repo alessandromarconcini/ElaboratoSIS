@@ -1,0 +1,11 @@
+.model xor
+
+.inputs IN1 IN0
+.outputs OXOR
+
+.names IN1 IN0 OXOR
+
+10 1
+01 1
+
+.end

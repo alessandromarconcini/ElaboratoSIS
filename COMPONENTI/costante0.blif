@@ -1,0 +1,10 @@
+.model costante0
+
+.outputs COSTANTE0
+
+.names COSTANTE0
+.end
+
+# Non ha input perchè è una costante
+# non ha scritto nulla dopo names perchè sis in automatico da "0" in quel caso
+# Fornisce uno "0" costante

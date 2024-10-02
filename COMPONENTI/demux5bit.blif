@@ -1,0 +1,52 @@
+.model demux5bit
+
+.inputs SELEZIONE IN4 IN3 IN2 IN1 IN0
+
+.outputs ZERO4 ZERO3 ZERO2 ZERO1 ZERO0 UNO4 UNO3 UNO2 UNO1 UNO0
+
+# SELEZIONE A "1" (Bit di sinistra)
+
+.names SELEZIONE IN4 ZERO4
+
+01 1
+
+.names SELEZIONE IN3 ZERO3
+
+01 1
+
+.names SELEZIONE IN2 ZERO2
+
+01 1
+
+.names SELEZIONE IN1 ZERO1
+
+01 1
+
+.names SELEZIONE IN0 ZERO0
+
+01 1
+
+# SELEZIONE A "0" (Bit di destra)
+
+
+.names SELEZIONE IN4 UNO4
+
+11 1
+
+.names SELEZIONE IN3 UNO3
+
+11 1
+
+.names SELEZIONE IN2 UNO2
+
+11 1
+
+.names SELEZIONE IN1 UNO1
+
+11 1
+
+.names SELEZIONE IN0 UNO0
+
+11 1
+
+.end

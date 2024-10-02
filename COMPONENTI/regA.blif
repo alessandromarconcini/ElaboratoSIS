@@ -1,0 +1,14 @@
+.model regA
+
+.inputs IN4 IN3 IN2 IN1 IN0
+
+.subckt reg1bit IN=IN4 OUT=OREG4
+.subckt reg1bit IN=IN3 OUT=OREG3
+.subckt reg1bit IN=IN2 OUT=OREG2
+.subckt reg1bit IN=IN1 OUT=OREG1
+.subckt reg1bit IN=IN0 OUT=OREG0
+
+.outputs OREG4 OREG3 OREG2 OREG1 OREG0
+
+.search reg1bit.blif
+

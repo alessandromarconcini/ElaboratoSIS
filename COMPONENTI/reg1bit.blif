@@ -1,0 +1,8 @@
+.model reg1bit
+
+.inputs IN
+
+.outputs OUT
+.latch IN OUT re NIL 0
+.end
+ 

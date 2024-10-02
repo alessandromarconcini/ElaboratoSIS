@@ -1,0 +1,37 @@
+.model accensione
+
+.inputs SEQ4 SEQ3 SEQ2 SEQ1 SEQ0 
+
+.outputs OREG ENTRATA USCITA 
+
+
+.subckt uguale11111 SEQ4=SEQ4 SEQ3=SEQ3 SEQ2=SEQ2 SEQ1=SEQ1 SEQ0=SEQ0 RISULTATO1=RISULTATO11111
+.subckt uguale00000 SEQ4=SEQ4 SEQ3=SEQ3 SEQ2=SEQ2 SEQ1=SEQ1 SEQ0=SEQ0 RISULTATO0=RISULTATO00000
+
+.subckt not BIT_DA_NEGARE=RISULTATO00000 NEGATO=RISULTATO00000_NEGATO
+
+//MUXACCESO
+.subckt mux1bit SELEZIONE=OREG IN1=RISULTATO11111 IN0=RISULTATO00000_NEGATO OMUX=ACCESO
+
+//REGISTRO UTILIZZATO PER LA SELEZIONE
+.subckt reg1bit IN=ACCESO OUT=OREG
+
+.subckt uguale01 IN=SEQ4 OUT=SEQ3 ENTRATA=ENTRATA
+.subckt uguale10 IN=SEQ4 OUT=SEQ3 USCITA=USCITA
+
+
+.end
+
+.search uguale00000.blif
+.search uguale11111.blif
+.search reg1bit.blif
+.search mux1bit.blif
+.search not.blif
+.search uguale01.blif
+.search uguale10.blif
+.search costante0.blif
+.search mux5bit.blif
+.search regA.blif
+.search regB.blif
+.search regC.blif
+

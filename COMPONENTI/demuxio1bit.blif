@@ -1,0 +1,19 @@
+.model demuxio1bit
+
+.inputs IN OUT VAL
+.outputs SOMMA DIFF ANNULLA1 ANNULLA0
+
+.names IN OUT VAL SOMMA 
+
+011 1
+
+.names IN OUT VAL DIFF
+101 1
+
+.names IN OUT VAL ANNULLA1
+001 1
+
+.names IN OUT VAL ANNULLA0
+111 1
+
+.end
